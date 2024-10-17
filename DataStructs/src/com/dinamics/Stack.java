@@ -9,9 +9,9 @@ class Node<E> {
     E      value;
     Node<E> before;
     
-    public Node(E value, E before) {
-        this.value = value;
-        this.before  =  (Node<E>) before;
+    public Node(E value, Node<E> before) {
+        this.value  = value;
+        this.before = before;
     }
 } 
 
