@@ -21,8 +21,6 @@ Hoje, as estruturas de dados são um dos principais componentes de qualquer sist
 
 ---
 
-## Estruturas Implementadas
-
 | Nome                | Estática | Dinâmica  | Descrição    |
 |---------------------|----------|-----------|--------------|
 | **Stack**           | ✔️       | ✔️         | [Link](https://pt.wikipedia.org/wiki/Pilha_(inform%C3%A1tica)) |
