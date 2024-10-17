@@ -1,5 +1,9 @@
-# Estruturas de Dados em Java
 
+<div style="text-align: center;">
+  <img src="cover.png" width="50%"/>
+</div>
+
+# Estruturas de Dados em Java
 Este repositório contém a implementação de várias estruturas de dados, tanto dinâmicas quanto estáticas, usando Java. O objetivo deste projeto é demonstrar e explorar diferentes formas de organizar e manipular dados.
 
 ---
