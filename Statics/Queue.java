@@ -1,6 +1,6 @@
 
 /**
- * @date 22/10/2024, 12:10
+ * @date 22/10/2024, 12:10 @update: 15:06
  * @author K-Zoldyck
  */
 
@@ -23,13 +23,12 @@ public class Queue<E> {
             this.data[this.fn++] = element;
     }
 
-    public void remove() {
-        if (this.st < this.fn ) {
-            this.st++;
-            return;
-        }
+    public E remove() {
+        if (this.st < this.fn )
+            return this.data[this.st++];
         this.st = 0;
         this.fn = 0;
+        return null;
     }
 
     public void organize() {
@@ -39,7 +38,7 @@ public class Queue<E> {
             this.st +=1;
             lp +=1;
         }
-        this.fn = this.st-2;
-        this.st = 0;
+        this.fn = lp;
+        this.st =  0;
     }
 }
