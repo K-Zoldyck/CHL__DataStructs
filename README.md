@@ -33,7 +33,7 @@ Hoje, as estruturas de dados são um dos principais componentes de qualquer sist
 | MaxHeap             | ❌      | ❌       | [Link](#) |
 | MinHeap             | ❌      | ❌       | [Link](#) |
 | ParseTree           | ❌      | ❌       | [Link](#) |
-| Queue               | ❌      | ❌       | [Link](#) |
+| Queue               | ✔️      | ❌       | [Link](#) |
 | Set                 | ❌      | ❌       | [Link](#) |
 | Tree                | ❌      | ❌       | [Link](#) |
 | Trie                | ❌      | ❌       | [Link](#) |
