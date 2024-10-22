@@ -4,49 +4,42 @@
  * @author K-Zoldyck
  */
 
-package com.statics;
+package Statics;
 public class Queue<E> {
     public int st;    // inicio
     public int fn;    // final
-    public int ln;    // quantidade
+    public int lm;    // quantidade
     public E[] data;
 
     public Queue(int limit) {
-        this.st = -1;  // fila vazia
-        this.fn = -1;
-        this.lm = limit-1;
+        this.st = 0;  // fila vazia
+        this.fn = 0;
+        this.lm = limit;
         this.data = (E[]) new Object[limit];
     }
 
     public void add(E element) {
-        if (this.fn < this.lm ) {
-            this.data[++this.fn] = element;
-        } 
-        else if (this.st >= 0 ){
-            this.organize()
-            this.add(data);
-        }
+        if (this.fn < this.lm )
+            this.data[this.fn++] = element;
     }
 
-    public E remove() {
-        if ( this.fn > 0 && this.fn < this.ln)
-            return this.data[++this.st];
-        
-        if (this.fn == this.st ) {
-            this.st = -1;
-            this.fn = -1;
-            return null;
+    public void remove() {
+        if (this.st < this.fn ) {
+            this.st++;
+            return;
         }
+        this.st = 0;
+        this.fn = 0;
     }
 
     public void organize() {
         int lp = 0;
-        while ( this.st <= this.fn ) {
+        while ( this.st < this.fn ) {
             this.data[lp] = this.data[this.st];
             this.st +=1;
             lp +=1;
         }
-        this.fn = this.st-1;
+        this.fn = this.st-2;
         this.st = 0;
     }
 }
